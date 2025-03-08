@@ -136,11 +136,9 @@ function App() {
             </div>
             <div>
               <p className="text-lg mb-6 text-gray-700 dark:text-gray-300">
-                As an artist and motivational speaker, I've dedicated my life to inspiring others through creativity and resilience. My journey has taught me that our greatest challenges often become our most powerful sources of strength.
+              Muniba Mazari is a Pakistani artist, motivational speaker, activist, and TV host, widely known as The Iron Lady of Pakistan. After a life-changing car accident left her paralyzed, she transformed her pain into strength, becoming an inspiration for millions. Through her art, speeches, and advocacy, she champions women's empowerment, resilience, and inclusivity. Muniba is also Pakistan’s first wheelchair-bound model and a UN Women’s goodwill ambassador. Her journey is a testament to the power of courage, determination, and hope.
               </p>
-              <p className="text-lg mb-6 text-gray-700 dark:text-gray-300">
-                Through my art and speeches, I share stories of hope, courage, and transformation. I believe in the power of authenticity and the importance of embracing our unique journeys.
-              </p>
+              
               <div className="flex gap-4">
                 <div className="flex-1 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
                   <h3 className="font-bold text-xl mb-2">100+</h3>
@@ -168,16 +166,17 @@ function App() {
             <div className="w-24 h-1 bg-gradient-to-r from-red-500 to-blue-500 mx-auto"></div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[1, 2, 3, 4, 5, 6].map((item) => (
+            {[[`https://cdn.artcld.com/img/w_640,c_fit/ru9yx05zam7os9keoiju.jpg`,`Bed of Roses`], [`https://cdn.artcld.com/img/w_640,c_fit/mkv3kvtqkgx15cr19jho.jpg`,`
+Concerned! (Bed of Roses)`], [`https://cdn.artcld.com/img/w_640,c_fit/xfeyffjmv67w0aeki95a.png`, `Bed of Roses 2`], [`https://cdn.artcld.com/img/w_640,c_fit/q8uzc5fgz7z7m5h5lksh.jpg`, `Set Me Free`], [`https://cdn.artcld.com/img/w_640,c_fit/krne7zvtvqtfgvd523bw.png`, `I See the Light`], [`https://cdn.artcld.com/img/w_640,c_fit/iumjsckl2lcmevrh89nz.jpg`,'Awaiting Joy 2']].map((item) => (
               <div key={item} className="group relative overflow-hidden rounded-lg">
                 <img
-                  src={`https://cdn.artcld.com/img/w_640,c_fit/ru9yx05zam7os9keoiju.jpg`}
+                  src={item[0]}
                   alt={`Artwork ${item}`}
                   className="w-full h-64 object-cover transform transition-transform group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-6">
                   <div>
-                    <h3 className="text-white text-xl font-bold mb-2">Artwork Title {item}</h3>
+                    <h3 className="text-white text-xl font-bold mb-2">{item[1]}</h3>
                     <p className="text-gray-300">Mixed Media on Canvas</p>
                   </div>
                 </div>
